@@ -1,0 +1,142 @@
+{
+  "info": {
+    "_postman_id": "6522a63a-b96f-4b6c-94e1-2fed976827ae",
+    "name": "Mitocode 5 - Kafka - [EXAMEN]",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "11695087"
+  },
+  "item": [
+    {
+      "name": "/api/v1/payments [LOCAL]",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"timestamp\": 123123124,\r\n  \"card_id\": \"12345684\",\r\n  \"amount\": 222.00,\r\n  \"type\": \"A\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/payments",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "payments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/payments [AWS]",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"timestamp\": 123123124,\r\n  \"card_id\": \"12345681\",\r\n  \"amount\": 15.00,\r\n  \"type\": \"C\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://3.81.44.40:8080/api/v1/payments",
+          "protocol": "http",
+          "host": [
+            "3",
+            "81",
+            "44",
+            "40"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "payments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/search [LOCAL]",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"timestamp\": 123123123,\r\n  \"card_id\": \"12345678\",\r\n  \"amount\": 100.00,\r\n  \"type\": \"A\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/v1/search",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "v1",
+            "search"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/search [AWS]",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"timestamp\": 123123123,\r\n  \"card_id\": \"12345678\",\r\n  \"amount\": 100.00,\r\n  \"type\": \"A\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://3.81.44.40:8081/api/v1/search",
+          "protocol": "http",
+          "host": [
+            "3",
+            "81",
+            "44",
+            "40"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "v1",
+            "search"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
