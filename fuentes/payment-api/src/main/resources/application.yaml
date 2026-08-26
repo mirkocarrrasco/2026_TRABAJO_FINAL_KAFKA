@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: payment-api
+  kafka:
+    bootstrap-servers: kafka:19092
+server:
+  port: 8080

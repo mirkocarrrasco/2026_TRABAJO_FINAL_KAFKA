@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: payment-stream
+
+  kafka:
+    bootstrap-servers: kafka:19092
+
+    streams:
+      application-id: payment-stream
+server:
+  port: 8081
